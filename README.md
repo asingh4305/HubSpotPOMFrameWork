@@ -1,24 +1,29 @@
-#HubSpotPOMFrameWork POM#
+#HubSpot Page Object Model (POM) Framework#
 
-The HubSpotPOMFrameWork project is a Java-based automation framework for web applications built using the Page Object Model (POM) design pattern. The framework is specifically designed for testing and automating web applications built with the HubSpot CRM platform, but can be easily adapted to work with other web applications as well.
+- This project demonstrates an example of a Page Object Model (POM) framework for testing HubSpot APIs using RestAssured and TestNG. The framework is designed to provide a robust, scalable and maintainable architecture for API testing, by separating the page actions and locators into separate classes.
 
-The framework uses popular Java testing tools such as TestNG, Extent Reports, Log4j and Rest-Assured to provide a robust and flexible testing infrastructure. The framework supports both UI and API testing, and includes several utility classes and methods to make writing and maintaining tests easier.
+##Features##
+Easy to maintain and scalable architecture
+Reusable code through Page Object Model design
+TestNG for test execution and reporting
+RestAssured for API testing
+Maven for dependency management
+Requirements
+Java 8 or higher
+Maven
+Installation
+Clone the repository
+Install the required dependencies using Maven: mvn clean install
+Usage
+To run the tests, use the following Maven command:
 
-The project includes a sample HubSpot test suite that demonstrates how to use the framework to test common HubSpot features such as login, contact management, deals, tasks and workflows. The tests can be executed using Maven and generate detailed HTML test reports using Extent Reports.
+`mvn test`
 
-Getting Started
-To use the HubSpotPOMFrameWork, you need to have Java and Maven installed on your machine. Once you have cloned the project, you can import it into your preferred IDE (e.g. Eclipse, IntelliJ) and start writing your tests.
+TestNG will execute the tests and generate an HTML report in the target/surefire-reports directory.
 
-The project includes several packages that represent different layers of the framework, such as pages, tests, utilities and listeners. You can use these packages to organize your code and tests. The sample test suite can be found in the src/test/java/tests package.
-
-To execute the tests, you can use the following Maven command from the root directory of the project:
-
-mvn clean test
-
-This will run all the tests in the project and generate the HTML test reports in the test-output directory.
-
-Contributing
-The HubSpotPOMFrameWork project is open for contributions and suggestions. If you find a bug or have an idea for an improvement, feel free to open an issue or submit a pull request.
-
+Project Structure
+src/main/java: contains the base classes for the framework
+src/test/java: contains the test classes and POM classes
+src/test/resources: contains the test data and configuration files
 License
-The HubSpotPOMFrameWork project is licensed under the MIT License. Feel free to use and modify the code as you see fit.
+This project is licensed under the MIT License - see the LICENSE file for details.
